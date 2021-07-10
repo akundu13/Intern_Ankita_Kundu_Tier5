@@ -1,0 +1,368 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Open+Sans&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Roboto&display=swap');
+
+*
+{
+    margin:0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: var(--others-font);
+    font-size: 62.5%;
+}
+
+:root
+{
+    --grey:#424242;
+    --green-light:#00bfa5 ;/*#00d2d3*/
+    --grey-light:#eceff1;/*#eeeeee*/
+    --logo-font:  'Lemon', cursive; /*'Aref Ruqaa', serif;*/
+    --others-font: 'Roboto', sans-serif;  /* 'Open Sans', sans-serif;*/
+  
+}
+
+::selection
+{
+   
+    background: rgb(99, 180, 146);
+}
+
+/*------NAVBAR DESIGN------*/
+nav
+{
+    background-color:var(--grey);
+    width:100%;
+    height:13vh;
+ 
+}
+
+
+.nav_left 
+{ 
+    float: left;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    font-size: 2.5rem;
+    font-family: var(--logo-font)
+    
+}
+
+.nav_right ul
+{
+    float: right;
+    margin-top: 3.2rem;
+    margin-right: 7.5rem;
+    word-spacing: 3rem;
+   
+}
+.nav_right ul li
+{
+    display: inline-block;
+
+}
+.nav_right li a
+{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-decoration: none;
+   
+}
+
+#bt-logo
+{
+    background-color:var(--green-light) ;
+    border-radius: .5rem;
+    padding:1rem 2.5rem;
+    
+}
+
+/*------HEADER DESIGN------*/
+header
+{
+    width:100%;
+    height: 18vh;
+    background: white url('Img/bg.jpg');  
+    background-size: cover;
+    
+}
+
+ #title
+{
+    margin-left: 26rem;    
+    padding-top: 1.5rem;
+    margin-bottom: 1.7rem;
+    font-size: 2.5rem;
+    font-weight:lighter;
+}
+
+#head_bt1,#head_bt2
+{
+    text-decoration: none;
+    background: var(--green-light);
+    color: white;
+    border-radius: .5rem;
+    padding: .5rem 5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+   
+}
+#head_bt1
+{
+    margin-left: 27.5rem;
+}
+#head_bt2
+{
+    margin-left: 2rem;
+}
+
+
+/*------MAIN DESIGN------*/
+main
+{
+   
+    background-color:var(--grey-light);
+    width:100%;
+    height: 50vh;
+    
+}
+
+main h2
+{
+    color:#424242;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding: 1rem;
+    margin-left: 3.5rem;
+}
+
+
+
+.box
+{
+   
+    width:40%;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    display: inline-block;
+}
+
+.box1-text,.box2-text,.box3-text,.box4-text
+{
+   
+    margin: -7.5rem 10rem;
+}
+
+.box1-text h3,.box2-text h3,.box3-text h3,.box4-text h3
+{
+    font-size: 1.9rem;
+    font-weight:bolder;
+    word-spacing: .2rem;
+    margin: 0rem 0rem .5rem .5rem;
+}
+
+.box1-text p,.box2-text p,.box3-text p,.box4-text p
+{
+    font-size: 1.3rem;
+    padding: .5rem;
+    word-spacing: .3rem;
+    
+}
+
+.fa 
+{
+
+    color: white;
+    background-color: var(--grey);
+    padding:2.5rem 3rem;
+    font-size: 2.8rem;
+    display: inline-block;
+}
+
+
+/*------SECTION DESIGN------*/
+section
+{
+    
+    height: 27vh;
+    width:100%;
+    background-color: var(--green-light);
+}
+section p
+{
+    color: white;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: lighter;
+    word-spacing: .2rem;
+    margin: 0rem 27rem;
+    padding: 2.4rem;
+}
+
+
+/*------FOOTER DESIGN------*/
+footer
+{
+    width: 100%;
+    background-color: var(--grey);
+}
+
+
+/*..About Us Div Design*..*/
+.about
+{   
+    float: left;
+    margin-top: 2.8rem;
+    width:55%;
+    height:27vh;
+    
+}
+.about h3
+{
+    font-size: 2rem;
+    padding-top: 1.5rem ;
+    margin-bottom: 1rem;
+    margin-left: 3.5rem;
+    color: white;
+}
+
+.about p
+{
+    margin: 0rem 0rem 3rem 3.5rem;
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: .1rem;
+    text-align: left;
+}
+
+#footer_bt
+{
+    text-decoration: none;
+    background: var(--green-light);
+    color: white;
+    border-radius: .5rem;
+    padding: .5rem 5rem;
+    font-size: 1.6rem;
+    margin-left: 3.5rem;
+}
+
+
+/*..Get In Touch Div Design..*/
+
+.get-in-touch
+{
+    
+    float: right;
+    width: 45%;
+    height: 27vh;
+    margin-top: 2.8rem;
+}
+
+.get-in-touch h3
+{
+    font-size: 2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: 7rem;
+    color: white;
+}
+
+.get-in-touch p
+{
+    margin: 0rem  7rem;
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: .2rem;
+    text-align: left;
+}
+
+
+/*..Copy Right Div Design..*/
+.copy-right
+{
+    clear:both;
+    height: 9vh;
+    background-color: white;
+    
+}
+.copy-right p
+{
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+}
+
+
+
+/*-----MEDIA QUERY-----*/
+@media  (max-width:1295px) 
+{
+    html
+    {
+        font-size: 50%;
+    }
+    
+}
+@media (max-width:1124px)
+{
+    html
+    {
+        font-size: 45%;
+    }
+    
+}
+
+@media (max-width:919px) 
+{
+    html
+    {
+        font-size: 40%;
+    }
+    
+}
+@media (max-width:755px) 
+{
+    html
+    {
+        font-size: 35%;
+    }
+    
+}
+
+@media (max-width:667px) 
+{
+    html
+    {
+        font-size: 30%;
+    }
+    
+}
+
+@media (max-width:505px) 
+{
+    html
+    {
+        font-size: 25%;
+    }
+    header,main,section,footer
+    {
+        height: auto;
+    }
+    #head_bt1
+    {
+        margin-left: 15rem;
+    }
+    #title
+    {
+        padding: auto;
+        margin-left: 10rem;    
+      
+    }
+}
