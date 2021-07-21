@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Student List</title>
+
+        <!--=*=*=*=*=* CSS *=*=*=*=*=-->
+        <link rel="stylesheet" type="text/css" href="CSS/student.css">
+
+    </head>
+
+    <body>
+       
+        <div class="main">
+
+               <!--=*=*=*=*=* HEADING *=*=*=*=*=-->
+            <h3>Student Name</h3>
+            
+               <!--=*=*=*=*=* INPUT *=*=*=*=*=-->
+            <input id="name_ip" type="text" placeholder="Enter Your Name">
+            <input id="save_name" type="hidden" >
+            
+            <!--=*=*=*=*=* INPUT BUTTONS *=*=*=*=*=-->
+            <button type="submit" id="submit_btn">SUBMIT</button>
+            <button type="submit" id="save_btn">SAVE</button>
+
+
+               <!--=*=*=*=*=* STUDENT LIST *=*=*=*=*=-->
+            <div class="list">
+
+                <h2>Student List</h2>
+
+                    <ul id="listOfStudent">
+                        <!--List Will Add Dynamically-->
+
+                    </ul>
+
+            </div>
+
+        </div>
+
+    </body>
+
+     <!--=*=*=*=*=* JAVASCRIPT *=*=*=*=*=-->
+    <script type="text/javascript" src="JS/student.js"></script>
+</html>

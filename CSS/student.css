@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+Pro:wght@600&display=swap');
+
+*
+{
+    padding:0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+:root
+{
+    /*Font-Family*/
+    --headingText:'Merriweather', serif;
+    --normalText:'Source Sans Pro', sans-serif;
+
+    /*Colors*/
+    --mainBg:linear-gradient(130deg,#9e9e9e,#eceff1,#f8d393);
+    --secondBg:#ffd180;
+    --rmv-btn-color:#f10303;
+    --edit-btn-color:#318199;
+    --submit-btn-color:#f37712;
+    --save-btn-color:#388e3c;
+}
+::selection
+{
+    background-color: rgb(88, 158, 223);
+}
+
+/*---*** BODY DESIGN ***---*/
+body
+{
+    background-image: url('img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 112%;
+    font-family: var(--normalText);
+}
+
+/*---*** MAIN DIV DESIGN ***---*/
+.main
+{
+   position: relative;
+    width: 37vw;
+    height: 85vh;
+    margin: 1.9rem auto;
+    text-align: center;
+    border-radius: .25rem;
+    background-image:var(--mainBg);
+    opacity: 0.7;
+    box-shadow: 0rem .32rem 1.25rem .44rem #dd7c2c;
+    
+}
+.main h3
+{
+    text-align:left ;
+    padding-top: .9rem;
+    margin-left: 2.9rem;
+    font-weight: bold;
+    font-size: 1.57rem;
+    font-family: var(--headingText);
+    color: #d50000;
+
+}
+/*---*** INPUT BOX DESIGN ***---*/
+#name_ip
+{
+    width: 85%;
+    padding: .75rem 1.25rem;
+    margin: .9rem 0;
+    background-color: var(--secondBg);
+    border: .125rem solid red;
+    border-radius:.44rem;
+    box-shadow: 0rem 0rem .63rem  #000000;
+    word-spacing: .125rem;
+    font-size: 1rem;
+}
+
+#name_ip:focus
+{
+    outline: none;
+    width: 86%;
+    border: .21rem solid rgb(54, 101, 172);
+}
+
+
+
+/*---*** SUBMIT AND SAVE BUTTON DESIGN ***---*/
+
+#submit_btn,#save_btn
+{
+    border: .125rem solid rgb(70, 70, 70);
+    width: 9rem;
+    height: 2.5rem;
+    margin-bottom: 1.25rem;
+    border-radius: 1.57rem;
+    background-color: var(--submit-btn-color);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+#save_btn
+{
+    display:none;
+    background-color: var(--save-btn-color);
+}
+
+#submit_btn:hover,#save_btn:hover
+{
+    width: 9.2rem;
+    height: 2.62rem;
+}
+
+
+
+/*---*** LIST DIV DESIGN ***---*/
+.list
+{
+    border: .125rem solid red;
+    border-radius: 0.4rem;
+    background-color: var(--secondBg);
+    width: 85%;
+    margin: auto;
+    padding: 0.6rem;
+    
+    
+}
+.list h2
+{
+    font-family: var(--headingText);
+    text-align: center;
+    margin-bottom: 0.9rem;
+}
+
+/*---*** UL DESIGN ***---*/
+#listOfStudent
+{
+    position: relative;
+    list-style:none; 
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.slNo
+{
+    margin:0rem .7rem;
+}
+
+
+/*---*** REMOVE AND EDIT BUTTON DESIGN ***---*/
+
+.rmv_btn,.edit_btn
+{
+    position: absolute;
+    color: black;
+    width:5.6rem;
+    height: 1.8rem;
+    padding: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    border-radius: 1.1rem;
+    cursor: pointer;
+ 
+}
+
+
+.rmv_btn
+{
+    right: 0rem;
+    background-color: var(--rmv-btn-color);
+}
+
+.edit_btn
+{
+    right: 6.2rem;
+    background-color: var(--edit-btn-color);
+}
+
+
+.rmv_btn:hover,.edit_btn:hover
+{
+    width: 6rem;
+
+}
+
+
+
+
