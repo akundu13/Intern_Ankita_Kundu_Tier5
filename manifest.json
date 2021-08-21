@@ -1,0 +1,42 @@
+{
+    "manifest_version":3,
+    "name":"Test Extension",
+    "version":"1.0.0",
+    "description":"This is a test extension",
+    "icons":
+    {
+        "16":"/img/icon16.png",
+        "48":"/img/icon48.png",
+        "128":"/img/icon128.png"
+    },
+    
+    "action":
+    {
+        "default_popup":"popup.html",
+        "defaul_icon":"/img/icon16.png",
+        "default_title":"SearchKaro.com"
+    },
+    "permissions":
+    [
+        "tabs",
+        "activeTab",
+        "alarms",
+        "scripting", 
+        "storage",
+        "notifications"           
+    ],
+    "background":
+    {
+        "service_worker":"background.js"
+    },
+    "host_permissions": ["https://*.developer.chrome.com/*"],
+    "content_scripts": 
+    [
+      {
+        "css": ["CSS/style.css"],
+        "js": ["JS/content.js"],
+        "matches": ["https://*.developer.chrome.com/*"],
+        "run_at": "document_end"
+      }
+    ]
+}

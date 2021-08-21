@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 20rem;
+    height: 15rem;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+/*popup heading css*/
+.logo
+{
+    font-size: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color:#70b7f1;
+    display:inline-block;
+    margin-top:1.5rem; 
+    margin-left: 2rem;
+     
+}
+
+/*Popup textarea CSS*/
+#textArea
+{
+    margin: 1.7rem 0rem .75rem 2.2rem;
+    width: 15.6rem;
+    padding: .75rem;
+    border: 0.07rem solid rgb(32, 32, 31);
+    border-radius: 0.25rem;
+    background-color: rgb(191, 243, 247);
+    font-weight:bold;
+}
+/*Pop up Buttons CSS*/
+#search_btn,#print_btn
+{
+    background-color:#2494f0;
+    color: white;
+    padding: 0.5rem 1.7rem;
+    margin-top:1rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+#search_btn
+{
+    margin-left:3rem;
+}
+#print_btn
+{
+    margin-left:1.5rem;
+}
+
+#search_btn:hover,#print_btn:hover 
+{
+    background-color:rgb(10, 189, 243);
+}
